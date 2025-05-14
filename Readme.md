@@ -1,7 +1,7 @@
-# Личный проект «projectTitle» 
+# Личный проект «Barbershop» 
 
-* Студент: [userName](userProfile).
-* Наставник: `Неизвестно`.
+* Студент: [PalNikolai4](https://github.com/PalNikolai4).
+* Наставник: `HTML Academy`.
 
 ---
 
