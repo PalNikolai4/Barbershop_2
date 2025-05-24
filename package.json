@@ -14,9 +14,9 @@
     "stylelint": "13.13.1",
     "stylelint-config-htmlacademy": "0.1.11"
   },
-   "overrides": {
+  "overrides": {
     "es5-ext": "0.10.53"
-   },
+  },
   "scripts": {
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/less/**/*.less\" --syntax less",
