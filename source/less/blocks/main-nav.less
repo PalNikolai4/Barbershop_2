@@ -1,10 +1,6 @@
 @import url("../global/mixins.less");
 @import url("../private/variables.less");
 
-// @mobile-width-only: 767px;
-// @tablet-width: 768px;
-// @desktop-width: 1200px;
-
 @media (min-width: @tablet-width) {
   .main-nav__toggle {
     display: none;
@@ -17,12 +13,12 @@
     margin: 0 auto;
   }
 }
+
 @media (min-width: @desktop-width) {
   .main-nav__wrapper {
     width: 960px;
   }
 }
-
 
 .main-nav__list {
   .zero-list-style();
