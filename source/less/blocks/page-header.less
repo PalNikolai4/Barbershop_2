@@ -1,8 +1,23 @@
 @import url("../private/mixins.less");
+@import url("../private/variables.less");
 
 .page-header {
   display: flex;
   flex-direction: column;
   background-color: #242424;
   color: #ffffff;
+}
+
+.page-header__logo {
+  height: 85px;
+
+  @media (min-width: @tablet-width) {
+    order: 2;
+    height: 100px;
+  }
+
+  @media (min-width: @desktop-width) {
+    order: 2;
+    height: 150px;
+  }
 }
