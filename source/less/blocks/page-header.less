@@ -1,9 +1,19 @@
 .page-header {
-    background-color: #242424;
-    color: #ffffff;
+  background-color: #242424;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
 }
 
 .page-header__logo {
-    outline: 2px solid rgba(255, 0, 0, 0.8);
-    outline-offset: -3px;
+  @media (min-width: @tablet-width) {
+    order: 2;
+    height: 400px;
+  }
+
+  @media (min-width: @desctop-width) {
+    height: 648px;
+  }
+
+  height: 85px;
 }
