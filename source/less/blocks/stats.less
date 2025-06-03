@@ -1,0 +1,41 @@
+.stats {
+  background-color: @darkgray;
+  color: #ffffff;
+}
+
+.stats__wrapper {
+  @media (min-width: @tablet-width) {
+    padding: 0 64px;
+  }
+
+  @media (min-width: @desctop-width) {
+    margin: auto;
+    max-width: 960px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+.stats__header {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.stats__slogan,
+.stats__intro,
+.stats__legend,
+.stats__list {
+  margin: 0;
+}
+
+.stats__legend--top {
+  @media (max-width: @mobile-width-only) {
+    display: none;
+  }
+}
+
+.stats__legend--bottom {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
