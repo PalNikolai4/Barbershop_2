@@ -1,3 +1,11 @@
 .site-list {
-  .outline-green();
+  @media (min-width: @tablet-width) {
+    width: 570px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desctop-width) {
+    width: 780px;
+  }
 }
