@@ -9,3 +9,25 @@
     width: 780px;
   }
 }
+
+.site-list a {
+  // пока не знаю зачем нужно позиционирование (шаг 9/42) а так же padding-bottom: 13px
+  // position: relative;
+  display: block;
+  padding: 12px 21px;
+  // padding-bottom: 13px;
+  font-weight: bold;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-top: 1px solid #886E5B;
+  border-bottom: 1px solid #71543F;
+
+  &:hover {
+    background-color: #624530;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
