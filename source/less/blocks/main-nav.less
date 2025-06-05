@@ -1,8 +1,82 @@
+.main-nav {
+  position: relative;
+  width: auto;
+  min-height: 51px;
+
+  @media (max-width: @mobile-width-only) {
+    background-color: #826550;
+  }
+}
+
 .main-nav__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 70px;
+  height: 50px;
+  padding: 0;
+  z-index: 2;
+  background-color: #6a4d38;
+  cursor: pointer;
+  border: none;
+
+  &:hover,
+  &:active {
+    background-color: #624530;
+  }
+
   @media (min-width: @tablet-width) {
     display: none;
   }
 }
+
+.main-nav--closed .main-nav__toggle {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 17px;
+    width: 36px;
+    height: 2px;
+    background-color: #ffffff;
+    box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff;
+  }
+
+  &:active::before {
+    opacity: 0.3;
+  }
+}
+
+.main-nav--opened .main-nav__toggle {
+  left: 0;
+  right: auto;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: calc(50% - 1px);
+    left: calc(50% - 18px);
+    width: 36px;
+    height: 2px;
+    background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    opacity: 0.3;
+  }
+}
+
 
 .main-nav__wrapper {
   @media (min-width: @tablet-width) {

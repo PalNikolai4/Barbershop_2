@@ -3,17 +3,47 @@
   color: #ffffff;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    background-color: #000000;
+  }
 }
 
 .page-header__logo {
+  display: flex;
+
+  & img {
+    margin: auto;
+  }
+
+  @media (max-width: @mobile-width-only) {
+    height: 85px;
+
+    & img {
+      width: 226px;
+      height: 30px;
+    }
+  }
+
   @media (min-width: @tablet-width) {
     order: 2;
     height: 400px;
+    background-color: #000000;
+    background-image: url("../../img/bg/back-tablet.webp");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+
+    & img {
+      margin-top: 40px;
+    }
   }
 
   @media (min-width: @desctop-width) {
     height: 648px;
-  }
 
-  height: 85px;
+    & img {
+      margin-top: 57px;
+    }
+  }
 }
