@@ -1,6 +1,28 @@
 .user-list {
-  background-color: #6A4D38;
+  @media (max-width: @mobile-width-only) {
+    background-color: #6A4D38;
+  }
   @media (min-width: @tablet-width) {
     width: 60px;
+    // background-color: transparent;
   }
+}
+
+.user-list__login {
+  // position: relative - непонятно зачем. Пока в комментарий (10/42)
+  position: relative;
+  display: block;
+  padding: 16px 21px;
+  padding-left: 49px;
+  line-height: 18px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.user-list__login svg {
+  position: absolute;
+  left: 21px;
+  top: 17px;
+  opacity: 0.3;
+  fill: #ffffff;
 }
