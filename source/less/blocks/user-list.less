@@ -6,7 +6,6 @@
 }
 
 .user-list__login {
-  // position: relative - непонятно зачем. Пока в комментарий (10/42)
   position: relative;
   display: block;
   padding: 16px 21px;
@@ -14,12 +13,37 @@
   line-height: 18px;
   color: #ffffff;
   text-decoration: none;
-}
 
-.user-list__login svg {
-  position: absolute;
-  left: 21px;
-  top: 17px;
-  opacity: 0.3;
-  fill: #ffffff;
+  & svg {
+    position: absolute;
+    left: 21px;
+    top: 17px;
+    opacity: 0.3;
+    fill: #ffffff;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 60px;
+    height: 70px;
+    padding: 0;
+
+    & span {
+      position: absolute;
+      opacity: 0;
+    }
+
+    & svg {
+      top: calc(50% - 9px);
+    }
+
+    &:hover svg {
+      opacity: 1;
+      fill: #826550;
+    }
+
+    &:active svg {
+      opacity: 0.3;
+      fill: #ffffff;
+    }
+  }
 }
