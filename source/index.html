@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/main-nav__toggle.js"></script>
+  <!-- <script src="js/main-nav__toggle.js"></script> -->
   <title>HTML Academy: Барбершоп &laquo;Бородинский&raquo;</title>
 </head>
 
@@ -34,8 +34,8 @@
           <a class="user-list__login js-login" href="#">
             Войти
             <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                <path d="M7 2h7v12H7v2h9V0H7v2Z" />
-                <path d="M7 9H0V7h7V4l4 4-4 4V9Z" />
+              <path d="M7 2h7v12H7v2h9V0H7v2Z" />
+              <path d="M7 9H0V7h7V4l4 4-4 4V9Z" />
             </svg>
           </a>
         </div>
@@ -235,6 +235,24 @@
       </div>
     </div>
   </footer>
+  <!-- <script>
+    let navMain = document.querySelector('.main-nav');
+    let navToggle = document.querySelector('.main-nav__toggle');
+
+    navMain.classList.remove('main-nav--nojs');
+
+    navMain.classList.remove('main-nav--nojs');
+    navToggle.addEventListener('click', function () {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.remove('main-nav--opened');
+        navMain.classList.add('main-nav--closed');
+      }
+    })
+  </script> -->
+  <script src="js/main-nav__toggle.js"></script>
 </body>
 
 </html>
