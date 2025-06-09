@@ -17,6 +17,7 @@
 }
 
 .stats__header {
+  padding: 28px 20px;
   background-color: #ffffff;
   color: #000000;
 }
@@ -28,14 +29,78 @@
   margin: 0;
 }
 
+.stats__slogan {
+  font-weight: bold;
+  line-height: 1;
+  background-color: #ffffff;
+  color: #000000;
+
+  @media (max-width: @mobile-width-only) {
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 13px;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 40px;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: @desctop-width) {
+    margin-bottom: 38px;
+  }
+}
+
+.stats__intro {
+  font-size: 20px;
+  line-height: 1.35;
+
+  @media (max-width: @mobile-width-only) {
+    text-align: center;
+
+    & br:nth-of-type(1),
+    & br:nth-of-type(3) {
+      display: none;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+
+    & br:nth-of-type(1),
+    & br:nth-of-type(3) {
+      display: block;
+    }
+
+    & br:nth-of-type(2) {
+      display: none;
+    }
+  }
+}
+
+.stats__legend {
+  display: block;
+  font-size: 20px;
+  line-height: 1;
+
+  @media (min-width: @desctop-width) {
+    line-height: 1.35;
+  }
+}
+
 .stats__legend--top {
   @media (max-width: @mobile-width-only) {
     display: none;
   }
+  margin-top: 27px;
+  color: fade(#000000, 30%);
 }
 
 .stats__legend--bottom {
   @media (min-width: @tablet-width) {
     display: none;
   }
+  margin-top: 20px;
+  text-align: center;
+  color: fade(#ffffff, 30%);
 }
