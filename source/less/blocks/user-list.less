@@ -1,7 +1,11 @@
 .user-list {
   @media (min-width: @tablet-width) {
     width: 60px;
-    // background-color: transparent;
+  }
+
+  @media (min-width: @desctop-width) {
+    width: auto;
+    max-width: 160px;
   }
 }
 
@@ -33,7 +37,7 @@
     }
 
     & svg {
-      top: calc(50% - 9px);
+      top: calc(50% - 8px);
     }
 
     &:hover svg {
@@ -44,6 +48,13 @@
     &:active svg {
       opacity: 0.3;
       fill: #ffffff;
+    }
+  }
+
+  @media (min-width: @desctop-width) {
+    & span {
+      position: static;
+      opacity: 1;
     }
   }
 }
