@@ -10,20 +10,16 @@
 }
 
 .page-header__logo {
-  display: flex;
+  height: 85px;
+  text-align: center;
 
-  & img {
-    margin: auto;
-  }
+  // @media (max-width: @mobile-width-only) {
 
-  @media (max-width: @mobile-width-only) {
-    height: 85px;
-
-    & img {
-      width: 226px;
-      height: 30px;
-    }
-  }
+  //   & img {
+  //     width: 226px;
+  //     height: 30px;
+  //   }
+  // }
 
   @media (min-width: @tablet-width) {
     order: 2;
