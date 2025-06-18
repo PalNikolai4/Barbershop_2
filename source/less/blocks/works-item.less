@@ -39,3 +39,86 @@
       linear-gradient(to bottom left, transparent 50%, #826550 50%);
   }
 }
+
+.works-item__image-wrapper {
+  position: relative;
+  height: 176px;
+  margin: 0;
+  line-height: 0;
+  text-align: center;
+  overflow: hidden;
+}
+
+.works-item--work-of-month .works-item__image-wrapper {
+  height: 480px;
+}
+
+.works-item__review {
+  padding-top: 19px;
+  padding-right: 21px;
+  padding-bottom: 0;
+  padding-left: 21px;
+  border: 1px solid #e5ddd5;
+  border-top: none;
+}
+
+.works-item__title {
+  margin-top: 0;
+  margin-bottom: 14px;
+  font-size: 24px;
+  line-height: 27px;
+  font-weight: bold;
+}
+
+.works-item__text {
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.works-item__parameter-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-top: auto;
+  padding: 0;
+  list-style-type: none;
+}
+
+.works-item__parameter-item {
+  position: relative;
+  width: auto;
+  text-align: right;
+  margin-right: 30px;
+  margin-bottom: 15px;
+  margin-left: 36px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.works-item__parameter-item::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 45px;
+  height: 21px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  transform: translate(-100%, -50%);
+}
+
+.works-item__parameter-item--haircut::before {
+  background-image: url("../../img/icons/scissors.svg");
+}
+
+.works-item__parameter-item--shaving::before {
+  background-image: url("../../img/icons/beard-admiral.svg");
+}
+
+.works-item__parameter-item--mustache::before {
+  background-image: url("../../img/icons/mustache.svg");
+}
+
+.works-item__parameter-item:last-child {
+  margin-right: 0;
+}
