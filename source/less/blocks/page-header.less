@@ -13,12 +13,6 @@
   height: 85px;
   text-align: center;
 
-  @media (max-width: @mobile-width-only) {
-    & img {
-      margin: 29px auto 26px;
-    }
-  }
-
   @media (min-width: @tablet-width) {
     order: 2;
     height: 400px;
@@ -31,21 +25,9 @@
       background-image: url("../../img/bg/back-tablet@2x.jpg");
       background-size: 1536px auto;
     }
-
-    & img {
-      display: block;
-      width: 370px;
-      height: auto;
-      margin: auto;
-      margin-top: 40px;
-    }
   }
 
   @media (min-width: @desctop-width) {
     height: 648px;
-
-    & img {
-      margin-top: 57px;
-    }
   }
 }
