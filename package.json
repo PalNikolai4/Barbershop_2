@@ -51,5 +51,18 @@
   "engines": {
     "node": "^22"
   },
-  "type": "module"
+  "type": "module",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PalNikolai4/Barbershop_2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PalNikolai4/Barbershop_2/issues"
+  },
+  "homepage": "https://github.com/PalNikolai4/Barbershop_2#readme"
 }
